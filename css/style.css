@@ -903,3 +903,79 @@ h3.title {
     padding: 1.2em 0em 0em;
 }
 }
+
+
+/* Work Experience Section */
+.experience-section {
+  margin: auto;
+  background: #fff;
+  padding: 25px 35px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Header */
+.experience-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  color: #222;
+  text-align: left;
+}
+
+/* Timeline styling */
+.experience {
+  position: relative;
+  border-left: 2px solid #ddd;
+  padding-left: 25px; /* a little more space for dot alignment */
+  margin-bottom: 30px;
+}
+
+.experience::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 0.6em; /* aligns the dot with the company name text */
+  width: 10px;
+  height: 10px;
+  background-color: #0a66c2;
+  border-radius: 50%;
+}
+
+/* Company Info */
+.company h3 {
+  margin-top: 0;        /* removes extra space above */
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: #0a66c2;
+  font-weight: 600;
+}
+
+.company p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 2px 0;
+}
+
+/* Role Info */
+.role {
+  margin-top: 10px;
+  padding-left: 5px;
+}
+
+.role h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+  margin: 3px 0;
+}
+
+.role p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Remove extra spacing for the last job */
+.experience:last-child {
+  margin-bottom: 0;
+}
