@@ -934,7 +934,7 @@ h3.title {
   content: "";
   position: absolute;
   left: -6px;
-  top: 0.6em; /* aligns the dot with the company name text */
+  top: 0.2em; /* aligns the dot with the company name text */
   width: 10px;
   height: 10px;
   background-color: #0a66c2;
