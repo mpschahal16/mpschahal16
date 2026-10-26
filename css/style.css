@@ -979,3 +979,41 @@ h3.title {
 .experience:last-child {
   margin-bottom: 0;
 }
+
+/* Clear, readable skill labels instead of unsupported percentage ratings. */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.skill-list li {
+  padding: 9px 14px;
+  border: 1px solid #dce4e8;
+  border-radius: 22px;
+  background: #f7fafb;
+  color: #31434b;
+  font-size: 14px;
+  line-height: 1.4;
+}
+body a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #0a66c2;
+  outline-offset: 3px;
+}
+.address_mail_footer_grids iframe {
+  max-width: 100%;
+}
+@media (max-width: 575px) {
+  .skill-list {
+    gap: 7px;
+  }
+  .skill-list li {
+    padding: 8px 11px;
+    font-size: 13px;
+  }
+}
